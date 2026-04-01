@@ -7,6 +7,11 @@ A curated library of front-end prototypes, landing pages, and UI experiments gen
 - **OpenBrain Pitch** (`open-brain-pitch/index.html`)
   - *Description:* The Sovereign Intelligence landing page designed to pitch the M4 architecture to stakeholders.
   - *Stack:* HTML, Tailwind CSS (CDN), Vanilla JS.
+  - *Status:* Live.
+
+- **Westin Jazz Nights** (`westin_jazz_buffet/index.html`)
+  - *Description:* Landing page for the Westin Hotel Circle Wednesday Jazz Buffet.
+  - *Stack:* HTML, Tailwind CSS (CDN), Vanilla JS.
   - *Status:* Local Review.
 
 ---

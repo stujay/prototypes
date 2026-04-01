@@ -7,6 +7,7 @@ Welcome to the central hub for the **OpenClaw Prototype Library**. This reposito
 | Prototype Name | Directory | Description | Status |
 | :--- | :--- | :--- | :--- |
 | **OpenBrain Pitch** | `open-brain-pitch/` | Sovereign Intelligence landing page (M4 Architecture) | Live |
+| **Westin Jazz Nights** | `westin_jazz_buffet/` | Wednesday Buffet & Jazz Package landing page | Local Review |
 
 ---
 
