@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Cap Lending | Fast-Track SME Funding Up to $5.25M</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        star: {
+                            dark: '#020617',     /* Midnight Blue base */
+                            panel: '#0f172a',    /* Slightly lighter blue for panels */
+                            primary: '#f59e0b',  /* Star Gold */
+                            secondary: '#fbbf24',/* Lighter Gold/Amber */
+                            accent: '#e2e8f0'    /* Crisp Silver/White */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(245, 158, 11, 0.15);
+        }
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+        }
+        .gold-glow:hover {
+            box-shadow: 0 0 40px rgba(245, 158, 11, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-star-dark text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel border-b border-star-primary/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <img src="logo.jpg" alt="Star Cap Lending Logo" class="h-12 w-12 rounded-full border border-star-primary/50 object-cover">
+                    <span class="font-bold text-2xl tracking-tight text-white">Star Cap <span class="text-star-primary">Lending</span></span>
+                </div>
+                <div>
+                    <a href="#apply" class="bg-star-primary hover:bg-star-secondary text-star-dark px-6 py-2.5 rounded-md font-bold transition-all duration-300 shadow-lg shadow-star-primary/20">
+                        Check Eligibility
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden relative">
+        <!-- Background accents -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none">
+            <div class="absolute top-20 left-10 w-96 h-96 bg-star-primary rounded-full mix-blend-screen filter blur-[100px] opacity-10"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[120px] opacity-10"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Hero Copy -->
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-star-panel border border-star-primary/30 text-sm text-star-secondary font-medium shadow-inner shadow-star-primary/10">
+                        <i class="fa-solid fa-star text-star-primary"></i> Premium Business Capital
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white">
+                        Reach your <br />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-star-primary to-yellow-200">Apex.</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-xl leading-relaxed">
+                        Access up to <strong>$5,250,000</strong> in elite non-dilutive capital. Designed exclusively for high-performing SMBs ready to dominate their market.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <div class="flex items-center gap-3 text-slate-200 font-medium">
+                            <i class="fa-solid fa-check text-star-primary bg-star-primary/10 p-1.5 rounded-full"></i> Zero Dilution
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-200 font-medium">
+                            <i class="fa-solid fa-check text-star-primary bg-star-primary/10 p-1.5 rounded-full"></i> 24h Deployment
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-200 font-medium">
+                            <i class="fa-solid fa-check text-star-primary bg-star-primary/10 p-1.5 rounded-full"></i> VIP Terms
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Funnel Form -->
+                <div id="apply" class="glass-panel p-8 rounded-2xl shadow-2xl relative border-t-4 border-t-star-primary">
+                    <div class="absolute -top-4 -right-4 bg-star-primary text-star-dark text-xs font-bold px-4 py-1.5 rounded-full shadow-lg transform rotate-2">
+                        Pre-Approval Active
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Secure Your Allocation</h3>
+                    <p class="text-slate-400 text-sm mb-6">Evaluation takes 60 seconds. Soft credit pull only.</p>
+                    
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Eligibility request submitted. Our concierge team will contact you shortly.');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="text-sm font-medium text-slate-300">First Name</label>
+                                <input type="text" required class="w-full bg-star-dark border border-slate-700 rounded-md px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-star-primary focus:border-transparent transition-all">
+                            </div>
+                            <div class="space-y-1">
+                                <label class="text-sm font-medium text-slate-300">Last Name</label>
+                                <input type="text" required class="w-full bg-star-dark border border-slate-700 rounded-md px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-star-primary focus:border-transparent transition-all">
+                            </div>
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-sm font-medium text-slate-300">Company Name</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fa-solid fa-building text-slate-500"></i>
+                                </div>
+                                <input type="text" required class="w-full bg-star-dark border border-slate-700 rounded-md pl-10 pr-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-star-primary transition-all">
+                            </div>
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-sm font-medium text-slate-300">Annual Revenue Run-Rate</label>
+                            <select required class="w-full bg-star-dark border border-slate-700 rounded-md px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-star-primary transition-all appearance-none">
+                                <option value="" disabled selected>Select revenue tier</option>
+                                <option value="tier1">$500K - $1M</option>
+                                <option value="tier2">$1M - $5M</option>
+                                <option value="tier3">$5M - $10M</option>
+                                <option value="tier4">$10M+</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-sm font-medium text-slate-300">Requested Capital</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fa-solid fa-dollar-sign text-slate-500"></i>
+                                </div>
+                                <input type="number" placeholder="Up to 5,250,000" max="5250000" min="50000" required class="w-full bg-star-dark border border-slate-700 rounded-md pl-10 pr-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-star-primary transition-all">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-star-primary hover:bg-star-secondary text-star-dark font-extrabold py-4 px-4 rounded-md transition-all duration-300 gold-glow mt-6 flex justify-center items-center gap-2 text-lg">
+                            Calculate Funding Limit <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        
+                        <p class="text-xs text-center text-slate-400 mt-4">
+                            <i class="fa-solid fa-shield-halved mr-1"></i> Bank-grade 256-bit encryption. Your data is secure.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Social Proof Section -->
+    <section class="border-t border-slate-800/50 bg-star-dark py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm font-semibold text-slate-500 tracking-wider uppercase mb-8">Funding the infrastructure of tomorrow</p>
+            <div class="flex flex-wrap justify-center gap-12 opacity-40 grayscale">
+                <i class="fa-brands fa-aws text-4xl hover:grayscale-0 hover:opacity-100 hover:text-star-primary transition-all cursor-pointer"></i>
+                <i class="fa-brands fa-stripe text-4xl hover:grayscale-0 hover:opacity-100 hover:text-star-primary transition-all cursor-pointer"></i>
+                <i class="fa-brands fa-shopify text-4xl hover:grayscale-0 hover:opacity-100 hover:text-star-primary transition-all cursor-pointer"></i>
+                <i class="fa-brands fa-digital-ocean text-4xl hover:grayscale-0 hover:opacity-100 hover:text-star-primary transition-all cursor-pointer"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm bg-star-dark">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Star Cap Lending. All rights reserved.</p>
+            <p class="mt-2 text-xs text-slate-600">Loans subject to underwriting approval. Star Cap Lending is a registered financial entity.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

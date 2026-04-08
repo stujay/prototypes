@@ -4,6 +4,11 @@ A curated library of front-end prototypes, landing pages, and UI experiments gen
 
 ## Available Prototypes
 
+- **Star Cap Lending** (`smb-capital/index.html`)
+  - *Description:* High-end SMB lending funnel (up to $5.25M allocation). Built as a demo for Andrew Spira.
+  - *Stack:* HTML, Tailwind CSS (CDN), FontAwesome.
+  - *Status:* Live (Port 8088).
+
 - **OpenBrain Pitch** (`open-brain-pitch/index.html`)
   - *Description:* The Sovereign Intelligence landing page designed to pitch the M4 architecture to stakeholders.
   - *Stack:* HTML, Tailwind CSS (CDN), Vanilla JS.
